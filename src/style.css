@@ -14,20 +14,20 @@ html {
 }
 
 .banner {
-  background-image: url(/src/assets/banner.jpg);
+  background-image: url(../src/assets/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .products {
-  background-image: url(/src/assets/pattern.svg);
+  background-image: url(../src/assets/pattern.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-clip: padding-box;
 }
 
 .projects {
-  background-image: url(/src/assets/pattern_2.svg);
+  background-image: url(../src/assets/pattern_2.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
