@@ -16,74 +16,76 @@
 </head>
 
 <body>
-    <main class="">
-        <header class="py-6 lg:py-12 container mx-auto px-4">
-            <!-- Logo -->
-            <div class="flex justify-center w-full">
-                <img src="src/assets/logo.svg" alt="Logo image" class="h-10 lg:h-12">
-            </div>
 
-            <!-- Main row -->
-            <div class="flex gap-4 mt-6 items-center justify-between flex-wrap lg:flex-nowrap">
-                <!-- Search -->
-                <button title="Search" class="order-2 lg:order-1 ml-auto lg:ml-0">
-                    <img src="src/assets/search_icon.png" alt="Search icon" class="h-6 w-6">
+    <header class="py-6 lg:py-12 container mx-auto px-4">
+        <!-- Logo -->
+        <div class="flex justify-center w-full">
+            <img src="src/assets/logo.svg" alt="Logo image" class="h-10 lg:h-12">
+        </div>
+
+        <!-- Main row -->
+        <div class="flex gap-4 mt-6 items-center justify-between flex-wrap lg:flex-nowrap">
+            <!-- Search -->
+            <button title="Search" class="order-2 lg:order-1 ml-auto lg:ml-0 cursor-pointer">
+                <img src="src/assets/search_icon.png" alt="Search icon" class="h-6 w-6">
+            </button>
+
+            <!-- toggle -->
+            <button id="menu-toggle"
+                class="lg:hidden order-1 size-8 text-sm border border-slate-200 rounded cursor-pointer">
+                ☰
+            </button>
+
+            <nav id="menu" class="hidden lg:flex order-last lg:order-2 w-full lg:w-auto">
+                <ul class="font-bold flex flex-col lg:flex-row gap-3 lg:gap-10 lg:items-center uppercase">
+                    <li>
+                        <a href="#" data-active="true"
+                            class="text-(--nav-color) data-[active=true]:text-(--nav-link-active) hover:text-(--nav-link-active) transition-colors ease-in-out duration-200">Home</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-(--nav-color) data-[active=true]:text-(--nav-link-active) hover:text-(--nav-link-active) transition-colors ease-in-out duration-200">Spaces</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-(--nav-color) data-[active=true]:text-(--nav-link-active) hover:text-(--nav-link-active) transition-colors ease-in-out duration-200">Products
+                            &
+                            Services</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-(--nav-color) data-[active=true]:text-(--nav-link-active) hover:text-(--nav-link-active) transition-colors ease-in-out duration-200">Showrooms</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-(--nav-color) data-[active=true]:text-(--nav-link-active) hover:text-(--nav-link-active) transition-colors ease-in-out duration-200">Company</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-(--nav-color) data-[active=true]:text-(--nav-link-active) hover:text-(--nav-link-active) transition-colors ease-in-out duration-200">Media</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-(--nav-color) data-[active=true]:text-(--nav-link-active) hover:text-(--nav-link-active) transition-colors ease-in-out duration-200">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="flex gap-4 items-center order-3">
+                <button title="Add to cart" class="cursor-pointer">
+                    <img src="src/assets/cart_icon.png" alt="Cart icon" class="h-6 w-6">
                 </button>
-
-                <!-- toggle -->
-                <button id="menu-toggle" class="lg:hidden order-1 size-8 text-sm border border-slate-200 rounded">
-                    ☰
+                <button title="View favourites" class="cursor-pointer">
+                    <img src="src/assets/fav_icon.png" alt="Fav icon" class="h-6 w-6">
                 </button>
-
-                <nav id="menu" class="hidden lg:flex order-last lg:order-2 w-full lg:w-auto">
-                    <ul class="font-bold flex flex-col lg:flex-row gap-3 lg:gap-10 lg:items-center uppercase">
-                        <li>
-                            <a href="#" data-active="true"
-                                class="text-(--nav-color) data-[active=true]:text-(--nav-link-active) hover:text-(--nav-link-active) transition-colors ease-in-out duration-200">Home</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="text-(--nav-color) data-[active=true]:text-(--nav-link-active) hover:text-(--nav-link-active) transition-colors ease-in-out duration-200">Spaces</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="text-(--nav-color) data-[active=true]:text-(--nav-link-active) hover:text-(--nav-link-active) transition-colors ease-in-out duration-200">Products
-                                &
-                                Services</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="text-(--nav-color) data-[active=true]:text-(--nav-link-active) hover:text-(--nav-link-active) transition-colors ease-in-out duration-200">Showrooms</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="text-(--nav-color) data-[active=true]:text-(--nav-link-active) hover:text-(--nav-link-active) transition-colors ease-in-out duration-200">Company</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="text-(--nav-color) data-[active=true]:text-(--nav-link-active) hover:text-(--nav-link-active) transition-colors ease-in-out duration-200">Media</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="text-(--nav-color) data-[active=true]:text-(--nav-link-active) hover:text-(--nav-link-active) transition-colors ease-in-out duration-200">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div class="flex gap-4 items-center order-3">
-                    <button title="Add to cart">
-                        <img src="src/assets/cart_icon.png" alt="Cart icon" class="h-6 w-6">
-                    </button>
-                    <button title="View favourites">
-                        <img src="src/assets/fav_icon.png" alt="Fav icon" class="h-6 w-6">
-                    </button>
-                    <button title="View profile">
-                        <img src="src/assets/user_icon.png" alt="Profile icon" class="h-6 w-6">
-                    </button>
-                </div>
+                <button title="View profile" class="cursor-pointer">
+                    <img src="src/assets/user_icon.png" alt="Profile icon" class="h-6 w-6">
+                </button>
             </div>
-        </header>
+        </div>
+    </header>
 
+    <main>
         <!-- Banner starts here -->
         <section class="banner | h-full lg:h-[60vh] flex items-center py-5">
             <div class="container mx-auto px-4">
@@ -246,87 +248,87 @@
             </div>
         </section>
         <!-- Projects ends here -->
+    </main>
+    <!-- footer starts here -->
+    <footer class="bg-[#111010] px-4 lg:px-0">
+        <div class="container mx-auto py-6 lg:py-16">
+            <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <div>
+                    <h5 class="">
+                        <img src="src/assets/logo_light.png" alt="Logo image">
+                    </h5>
+                    <ul class="flex gap-3 items-center mt-6 lg:mt-10">
+                        <li>
+                            <a href="#">
+                                <img src="src/assets/fb_icon.png" alt="Facebook icon">
+                            </a>
+                        </li>
 
-        <!-- footer starts here -->
-        <footer class="bg-[#111010] px-4 lg:px-0">
-            <div class="container mx-auto py-6 lg:py-16">
-                <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-                    <div>
-                        <h5 class="">
-                            <img src="src/assets/logo_light.png" alt="Logo image">
-                        </h5>
-                        <ul class="flex gap-3 items-center mt-6 lg:mt-10">
-                            <li>
-                                <a href="#">
-                                    <img src="src/assets/fb_icon.png" alt="Facebook icon">
-                                </a>
-                            </li>
+                        <li>
+                            <a href="#">
+                                <img src="src/assets/x_icon.png" alt="X icon">
+                            </a>
+                        </li>
 
-                            <li>
-                                <a href="#">
-                                    <img src="src/assets/x_icon.png" alt="X icon">
-                                </a>
-                            </li>
+                        <li>
+                            <a href="#">
+                                <img src="src/assets/insta_icon.png" alt="Instagram icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-                            <li>
-                                <a href="#">
-                                    <img src="src/assets/insta_icon.png" alt="Instagram icon">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <div>
+                    <h5 class="font-bold text-sm text-white">
+                        Products
+                    </h5>
+                    <ul class="flex gap-1 flex-col mt-4">
+                        <li>
+                            <a href="#" class="text-sm text-[#A4A4A4] hover:text-white">Sand Stone</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-[#A4A4A4] hover:text-white">Stone</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-[#A4A4A4] hover:text-white">Cement</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-[#A4A4A4] hover:text-white">Soft Stone</a>
+                        </li>
+                    </ul>
+                </div>
 
-                    <div>
-                        <h5 class="font-bold text-sm text-white">
-                            Products
-                        </h5>
-                        <ul class="flex gap-1 flex-col mt-4">
-                            <li>
-                                <a href="#" class="text-sm text-[#A4A4A4] hover:text-white">Sand Stone</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-sm text-[#A4A4A4] hover:text-white">Stone</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-sm text-[#A4A4A4] hover:text-white">Cement</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-sm text-[#A4A4A4] hover:text-white">Soft Stone</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div>
+                    <h5 class="font-bold text-sm text-white">
+                        Services
+                    </h5>
+                    <ul class="flex gap-1 flex-col mt-4">
+                        <li>
+                            <a href="#" class="text-sm text-[#A4A4A4] hover:text-white">Measurement Service</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-[#A4A4A4] hover:text-white">Product Advice</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-[#A4A4A4] hover:text-white">Interior Design</a>
+                        </li>
+                    </ul>
+                </div>
 
-                    <div>
-                        <h5 class="font-bold text-sm text-white">
-                            Services
-                        </h5>
-                        <ul class="flex gap-1 flex-col mt-4">
-                            <li>
-                                <a href="#" class="text-sm text-[#A4A4A4] hover:text-white">Measurement Service</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-sm text-[#A4A4A4] hover:text-white">Product Advice</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-sm text-[#A4A4A4] hover:text-white">Interior Design</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h5 class="font-bold text-sm text-white">
-                            Contact information
-                        </h5>
-                        <p class="mt-4 text-sm text-white">
-                            3181 Al Imam Saud Ibn Abdul Aziz Branch Rd,
-                            An Nuzhah, Riyadh 12474,
-                            Saudi Arabia
-                        </p>
-                    </div>
+                <div>
+                    <h5 class="font-bold text-sm text-white">
+                        Contact information
+                    </h5>
+                    <p class="mt-4 text-sm text-white">
+                        3181 Al Imam Saud Ibn Abdul Aziz Branch Rd,
+                        An Nuzhah, Riyadh 12474,
+                        Saudi Arabia
+                    </p>
                 </div>
             </div>
-        </footer>
-    </main>
+        </div>
+    </footer>
+
 
     <script>
         // Toggle
