@@ -1,0 +1,33 @@
+:root {
+  --background: #ffffff;
+  --text-color-primary: #111010;
+  --text-color-secondary: #616161;
+  --font: "Inter", sans-serif;
+  --nav-color: #0a0a0a;
+  --nav-link-active: #979797;
+}
+
+html {
+  font-family: var(--font);
+  background: var(--background);
+  color: var(--text-color-primary);
+}
+
+.banner {
+  background-image: url(/src/assets/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.products {
+  background-image: url(/src/assets/pattern.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+}
+
+.projects {
+  background-image: url(/src/assets/pattern_2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
